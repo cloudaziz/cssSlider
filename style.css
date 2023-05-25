@@ -6,6 +6,9 @@
 body {
     
 }
+img {
+    width: 100%;
+}
 .container {
     max-width: 1200px;
     margin-inline: auto;
@@ -24,6 +27,7 @@ body {
 
     overflow-x: auto;
     scroll-behavior: smooth;
+    scrollbar-width: none;
     /* overscroll-behavior-inline: contain; */
 
     scroll-snap-type: inline mandatory;
@@ -32,15 +36,20 @@ body {
 
 }
 
+
+.media-scroller::-webkit-scrollbar {
+    display: none;
+}
+
 .media-scroller > * {
     scroll-snap-align: start;
 }
 
 .media-element {
     font-size: 30px;
-    height: 200px;
-    display: grid;
-    place-items: center;
+    height: 600px;
+    /* display: grid; */
+    /* place-items: center; */
 }
 
 /* indicator */
@@ -60,3 +69,6 @@ body {
     display: grid;
     place-items: center;
 }
+
+
+/*  */
