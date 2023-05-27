@@ -48,8 +48,8 @@ img {
 .media-element {
     font-size: 30px;
     height: 600px;
-    /* display: grid; */
-    /* place-items: center; */
+    display: grid;
+    place-items: center;
 }
 
 /* indicator */
@@ -70,5 +70,3 @@ img {
     place-items: center;
 }
 
-
-/*  */
