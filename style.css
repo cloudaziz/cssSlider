@@ -42,28 +42,6 @@
   }
 }
 
-/* indicator */
-.indicator {
-  padding: 20px;
-
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 30px;
-  justify-content: center;
-  gap: 5px;
-
-  & a {
-    aspect-ratio: 1 / 1;
-    background-color: green;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-
-    text-decoration: none;
-    color: white;
-  }
-}
-
 /* Nav Content */
 .indicator-wrapper {
   --gap: 18px;
