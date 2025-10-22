@@ -19,7 +19,7 @@
 .media-scroller {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 100%;
+  grid-auto-columns: calc(100% - 40px);
 
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -42,6 +42,11 @@
     background-color: var(--content-bg);
   }
 }
+/* 
+scroll-snap-align
+scroll-snap-type
+scroll-behavior
+*/
 
 /* Nav Content */
 .indicator-wrapper {
@@ -60,20 +65,19 @@
     gap: var(--gap);
 
     &::before {
-        content: '';
-        position: absolute;
-        transform: translateX(var(--position));
-    
-        width: calc(var(--width) * 2);
-        height: var(--width);
-        border-radius: 10px;
-        background-color: green;
-        text-align: center;
-        transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      }
+      content: '';
+      position: absolute;
+      transform: translateX(var(--position));
+
+      width: calc(var(--width) * 2);
+      height: var(--width);
+      border-radius: 10px;
+      background-color: green;
+      text-align: center;
+      transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
 
     & .nav-list {
-
       & a {
         display: inline-block;
         background-color: green;
@@ -88,5 +92,3 @@
     }
   }
 }
-
-
